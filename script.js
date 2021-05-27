@@ -28,7 +28,12 @@ getLocation();
                 'Authorization': 'Bearer PlxL-yjNZczJ04Tn4-t6nRw80dKhjWZSXbrRPFPqjdl5hT7-8ZK238x9JtWApNIkxM_T1Tr6QytqhT7WjJ5dNbLBJR6yUPX_PRZMnHjC-x8MNx-_2oThLx3GfeavYHYx'
               },
             }).then(function (response) {
-              console.log(response)
+              //console.log(response.businesses);
+              var businesses = response.businesses;
+              for (var i = 0; i < businesses.length; i++) {
+                console.log(businesses[i].name);
+                console.log(businesses[i].url);
+              }
             })
             .catch(function(err) {
                 console.error(err);
