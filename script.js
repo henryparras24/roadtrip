@@ -40,7 +40,7 @@ getLocation();
                 console.error(err);
             });
 
-var Userinput = document.querySelector(".card");
+// var Userinput = document.querySelector(".card");
 
 var coffee = document.querySelector("#coffee");
 
@@ -58,11 +58,4 @@ function printRes(businesses) {
   titleEl.textContent = businesses.name;
   link.append(titleEl);
   resultBody.append(link);
-
-  // var bodyCont = document.createElement('p');
-  // bodyCont.innerHTML = 
-
-  // resultBody.append(titleEl, resultBody);
-
-  // Userinput.append()
 }
