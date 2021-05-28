@@ -31,10 +31,38 @@ getLocation();
               //console.log(response.businesses);
               var businesses = response.businesses;
               for (var i = 0; i < businesses.length; i++) {
-                console.log(businesses[i].name);
-                console.log(businesses[i].url);
+                // console.log(businesses[i].name);
+                // console.log(businesses[i].url);
+                printRes(businesses[i]);
               }
             })
             .catch(function(err) {
                 console.error(err);
             });
+
+var Userinput = document.querySelector(".card");
+
+var coffee = document.querySelector("#coffee");
+
+var resultBody = document.createElement('div');
+resultBody.classList.add('card-body');
+coffee.append(resultBody);
+
+function printRes(businesses) {
+  console.log(businesses);
+
+  var link = document.createElement("a");
+  link.setAttribute("href", businesses.url);
+  link.setAttribute("target", "_blank");
+  var titleEl = document.createElement('h5');
+  titleEl.textContent = businesses.name;
+  link.append(titleEl);
+  resultBody.append(link);
+
+  // var bodyCont = document.createElement('p');
+  // bodyCont.innerHTML = 
+
+  // resultBody.append(titleEl, resultBody);
+
+  // Userinput.append()
+}
