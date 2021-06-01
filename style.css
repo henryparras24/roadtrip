@@ -27,21 +27,18 @@
 }
 
 .card1 {
-    display: grid;
-    border: green solid 3px;
+    border: green solid 1px;
 }
 
 .card2 {
-    display: grid;
-    border: green solid 3px;
+    border: green solid 1px;
 }
 
 .card3 {
-    display: grid;
-    border: green solid 3px;
+    border: green solid 1px;
 }
 
 .card4 {
-    display: grid;
-    border: green solid 3px;
+
+    border: green solid 1px;
 }
