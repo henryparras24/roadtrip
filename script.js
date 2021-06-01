@@ -22,9 +22,13 @@ function getCityname(event) {
   
   console.log(cityName);
   displayYelpResults(cityName);
+  displayYelpFoodResults(cityName);
+  displayYelpHotelsResults(cityName);
+  displayYelpGasResults(cityName);
+  
   //get out text city name
   //call display yelp results
-  //
+  
 
 }
 
@@ -58,7 +62,7 @@ let queryYelp = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/bus
                 var resultBody = document.createElement('div');
                 resultBody.classList.add('card2');
                 coffee.append(resultBody);
-              for (var i = 0; i < businesses.length; i++) {
+              for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
                 // console.log(businesses[i].url);
                 
@@ -86,42 +90,43 @@ function printRes(businesses, resultBody) {
 }
 
 
-//getLocation();
-//         let queryYelpRestaurants = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=Los+Angeles';
-//             console.log(queryYelpRestaurants)
-//             $.ajax({
-//               'url': queryYelpRestaurants,
-//               'method': 'GET',
-//               'timeout': 0,
-//               'async': true,
-//               'crossDomain': true,
-//               'headers': {
-//                 'Content-Type': 'application/json',
-//                 'Access-Control-Allow-Origin': '*',
-//                 'Access-Control-Allow-Headers': '*',
-//                 'Authorization': 'Bearer PlxL-yjNZczJ04Tn4-t6nRw80dKhjWZSXbrRPFPqjdl5hT7-8ZK238x9JtWApNIkxM_T1Tr6QytqhT7WjJ5dNbLBJR6yUPX_PRZMnHjC-x8MNx-_2oThLx3GfeavYHYx'
-//               },
-//             }).then(function (response) {
-//               //console.log(response.businesses);
-//               var businesses = response.businesses;
-//               var food = document.querySelector("#food");
+function displayYelpFoodResults(citySelector){
+        let queryYelpRestaurants = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=restaurants&location=' + citySelector;
+            console.log(queryYelpRestaurants)
+            $.ajax({
+              'url': queryYelpRestaurants,
+              'method': 'GET',
+              'timeout': 0,
+              'async': true,
+              'crossDomain': true,
+              'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': '*',
+                'Authorization': 'Bearer PlxL-yjNZczJ04Tn4-t6nRw80dKhjWZSXbrRPFPqjdl5hT7-8ZK238x9JtWApNIkxM_T1Tr6QytqhT7WjJ5dNbLBJR6yUPX_PRZMnHjC-x8MNx-_2oThLx3GfeavYHYx'
+              },
+            }).then(function (response) {
+              //console.log(response.businesses);
+              var businesses = response.businesses;
+              var food = document.querySelector("#food");
 
-//                 var resultBodyFood = document.createElement('div');
-//                 resultBodyFood.classList.add('card2');
-//                 food.append(resultBodyFood);
-//               for (var i = 0; i < businesses.length; i++) {
-//                 // console.log(businesses[i].name);
-//                 // console.log(businesses[i].url);
+                var resultBodyFood = document.createElement('div');
+                resultBodyFood.classList.add('card2');
+                food.append(resultBodyFood);
+              for (var i = 0; i < 10; i++) {
+                // console.log(businesses[i].name);
+                // console.log(businesses[i].url);
                 
-//                 printRes(businesses[i],resultBodyFood);
-//               }
-//             })
-//             .catch(function(err) {
-//                 console.error(err);
-//             });
+                printRes(businesses[i],resultBodyFood);
+              }
+            })
+            .catch(function(err) {
+                console.error(err);
+            })
+          };
 
-getLocation();
-let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=hotels&location=Los+Angeles';
+function displayYelpHotelsResults(citySelector){
+let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=hotels&location=' + citySelector;
     console.log(queryYelpHotels)
     $.ajax({
       'url': queryYelpHotels,
@@ -143,7 +148,7 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
         var resultBodyHotels = document.createElement('div');
         resultBodyHotels.classList.add('card3');
         hotels.append(resultBodyHotels);
-      for (var i = 0; i < businesses.length; i++) {
+      for (var i = 0; i < 10; i++) {
         // console.log(businesses[i].name);
         // console.log(businesses[i].url);
         
@@ -152,11 +157,12 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
     })
     .catch(function(err) {
         console.error(err);
-    });
+    })
+  };
 
 
-getLocation();
-        let queryYelpGas = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=service_stations&location=Los+Angeles';
+  function displayYelpGasResults(citySelector){
+        let queryYelpGas = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=service_stations&location=' + citySelector;
             console.log(queryYelpGas)
             $.ajax({
               'url': queryYelpGas,
@@ -178,7 +184,7 @@ getLocation();
                 var resultBodyGas = document.createElement('div');
                 resultBodyGas.classList.add('card4');
                 gas.append(resultBodyGas);
-              for (var i = 0; i < businesses.length; i++) {
+              for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
                 // console.log(businesses[i].url);
                 
@@ -187,7 +193,8 @@ getLocation();
             })
             .catch(function(err) {
                 console.error(err);
-            });
+            })
+          };
 // var Userinput = document.querySelector(".card");
 
 
