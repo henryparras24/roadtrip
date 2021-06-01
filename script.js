@@ -97,6 +97,74 @@ getLocation();
                 console.error(err);
             });
 
+getLocation();
+let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=hotels&location=Los+Angeles';
+    console.log(queryYelpHotels)
+    $.ajax({
+      'url': queryYelpHotels,
+      'method': 'GET',
+      'timeout': 0,
+      'async': true,
+      'crossDomain': true,
+      'headers': {
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        'Access-Control-Allow-Headers': '*',
+        'Authorization': 'Bearer PlxL-yjNZczJ04Tn4-t6nRw80dKhjWZSXbrRPFPqjdl5hT7-8ZK238x9JtWApNIkxM_T1Tr6QytqhT7WjJ5dNbLBJR6yUPX_PRZMnHjC-x8MNx-_2oThLx3GfeavYHYx'
+      },
+    }).then(function (response) {
+      //console.log(response.businesses);
+      var businesses = response.businesses;
+      var hotels = document.querySelector("#hotels");
+
+        var resultBodyHotels = document.createElement('div');
+        resultBodyHotels.classList.add('card3');
+        hotels.append(resultBodyHotels);
+      for (var i = 0; i < businesses.length; i++) {
+        // console.log(businesses[i].name);
+        // console.log(businesses[i].url);
+        
+        printRes(businesses[i],resultBodyHotels);
+      }
+    })
+    .catch(function(err) {
+        console.error(err);
+    });
+
+
+getLocation();
+        let queryYelpGas = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/businesses/search?term=service_stations&location=Los+Angeles';
+            console.log(queryYelpGas)
+            $.ajax({
+              'url': queryYelpGas,
+              'method': 'GET',
+              'timeout': 0,
+              'async': true,
+              'crossDomain': true,
+              'headers': {
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': '*',
+                'Authorization': 'Bearer PlxL-yjNZczJ04Tn4-t6nRw80dKhjWZSXbrRPFPqjdl5hT7-8ZK238x9JtWApNIkxM_T1Tr6QytqhT7WjJ5dNbLBJR6yUPX_PRZMnHjC-x8MNx-_2oThLx3GfeavYHYx'
+              },
+            }).then(function (response) {
+              //console.log(response.businesses);
+              var businesses = response.businesses;
+              var gas = document.querySelector("#gas");
+
+                var resultBodyGas = document.createElement('div');
+                resultBodyGas.classList.add('card4');
+                gas.append(resultBodyGas);
+              for (var i = 0; i < businesses.length; i++) {
+                // console.log(businesses[i].name);
+                // console.log(businesses[i].url);
+                
+                printRes(businesses[i],resultBodyGas);
+              }
+            })
+            .catch(function(err) {
+                console.error(err);
+            });
 // var Userinput = document.querySelector(".card");
 
 
