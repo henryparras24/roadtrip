@@ -1,5 +1,9 @@
 var cityNameEl = document.querySelector("#cityName");
 var buttonEl = document.querySelector("#submitButton");
+var coffeeEl = document.querySelector("#coffee");
+var foodEl = document.querySelector("#food");
+var hotelsEl = document.querySelector("#hotels");
+var gasEl = document.querySelector("#gas");
 
 // var lat;
 // var lng;
@@ -21,6 +25,11 @@ function getCityname(event) {
   var cityName = cityNameEl.value
   
   console.log(cityName);
+coffeeEl.innerHTML = ""
+foodEl.innerHTML = ""
+hotelsEl.innerHTML = ""
+gasEl.innerHTML = ""
+
   displayYelpResults(cityName);
   displayYelpFoodResults(cityName);
   displayYelpHotelsResults(cityName);
