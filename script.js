@@ -95,7 +95,7 @@ function printRes(businesses, resultBody) {
   var titleEl = document.createElement('h5');
   titleEl.textContent = businesses.name;
   link.append(titleEl);
-  resultBody.append(link);
+  resultBody.appendChild(link);
 }
 
 
