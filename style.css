@@ -21,7 +21,27 @@
     margin: 5rem auto;
     width: min(90%, 75rem);
     display: grid;
-    grid-auto-flow: row;
     gap: 2em;
     text-align: center;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card1 {
+    display: grid;
+    border: green solid 3px;
+}
+
+.card2 {
+    display: grid;
+    border: green solid 3px;
+}
+
+.card3 {
+    display: grid;
+    border: green solid 3px;
+}
+
+.card4 {
+    display: grid;
+    border: green solid 3px;
 }
