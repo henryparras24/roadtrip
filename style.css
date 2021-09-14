@@ -1,3 +1,7 @@
+* {font-family: 'Kaisei Tokumin', serif;}
+
+body {background: #343a40;}
+
 .hero{
     height: 250px;
     width: 100%;
@@ -26,8 +30,8 @@
     grid-template-columns: repeat(2, 1fr);
 }
 
-.card1 {
-    border: green solid 1px;
+/* .card1 {
+    border:  #343a40 1px;
 }
 
 .card2 {
@@ -41,6 +45,8 @@
 .card4 {
 
     border: green solid 1px;
-}
+} */
 
 .seaSalt {background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);}
+
+.borderRadius {border-radius: 20px;}

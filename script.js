@@ -71,6 +71,7 @@ let queryYelp = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/bus
                 var resultBody = document.createElement('div');
                 resultBody.classList.add('card2');
                 resultBody.classList.add('seaSalt');
+                resultBody.classList.add('borderRadius');
                 coffee.append(resultBody);
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
@@ -123,6 +124,7 @@ function displayYelpFoodResults(citySelector){
                 var resultBodyFood = document.createElement('div');
                 resultBodyFood.classList.add('card2');
                 resultBodyFood.classList.add('seaSalt');
+                resultBodyFood.classList.add('borderRadius');
                 food.append(resultBodyFood);
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
@@ -159,6 +161,7 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
         var resultBodyHotels = document.createElement('div');
         resultBodyHotels.classList.add('card3');
         resultBodyHotels.classList.add('seaSalt');
+        resultBodyHotels.classList.add('borderRadius');
         hotels.append(resultBodyHotels);
       for (var i = 0; i < 10; i++) {
         // console.log(businesses[i].name);
@@ -196,6 +199,7 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
                 var resultBodyGas = document.createElement('div');
                 resultBodyGas.classList.add('card4');
                 resultBodyGas.classList.add('seaSalt');
+                resultBodyGas.classList.add('borderRadius');
                 gas.append(resultBodyGas);
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
