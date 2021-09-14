@@ -1,17 +1,15 @@
 * {font-family: 'Kaisei Tokumin', serif;}
 
-body {background: #343a40;}
+body {background: rgb(24, 23, 23);}
 
-.darkGrey {background: #343a40;}
+.darkGrey {background: rgb(24, 23, 23);}
 
 .hero{
-    height: 250px;
+    height: 300px;
     width: 100%;
-    margin-bottom: 25px;
-    background-image: url("roadtripopt.png");
+    background: url("GreyscaleCity.png");
+    background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
-    margin-top: 5px;
 }
 
 .txt h2 {
