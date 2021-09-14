@@ -2,6 +2,8 @@
 
 body {background: #343a40;}
 
+.darkGrey {background: #343a40;}
+
 .hero{
     height: 250px;
     width: 100%;
@@ -50,3 +52,8 @@ body {background: #343a40;}
 .seaSalt {background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);}
 
 .borderRadius {border-radius: 20px;}
+
+h3 {color: #adb5bd}
+
+.lightGrey {color: #adb5bd}
+
