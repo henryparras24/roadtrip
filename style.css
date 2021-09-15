@@ -4,12 +4,15 @@ body {background: rgb(24, 23, 23);}
 
 .darkGrey {background: rgb(24, 23, 23);}
 
-.hero{
-    height: 300px;
-    width: 100%;
-    background: url("GreyscaleCity.png");
+.hero {
+    margin-left: 150px;
+    margin-top: 15px;
+    margin-bottom: 25px;
     background-repeat: no-repeat;
-    background-size: cover;
+}
+
+.city {
+    border-radius: 20px;
 }
 
 .txt h2 {
