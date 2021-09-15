@@ -66,3 +66,7 @@ h3 {color: #adb5bd}
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
+
+.bottom {margin-bottom: 50px;
+         margin-top: 50px;
+}
