@@ -58,3 +58,11 @@ h3 {color: #adb5bd}
 
 .lightGrey {color: #adb5bd}
 
+.pill {border-radius: 30px; padding: 10px;}
+
+.pill:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #4b6cb7;
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
