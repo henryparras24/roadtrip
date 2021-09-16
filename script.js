@@ -72,6 +72,7 @@ let queryYelp = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/bus
                 resultBody.classList.add('card2');
                 resultBody.classList.add('seaSalt');
                 resultBody.classList.add('borderRadius');
+                resultBody.classList.add('cardMedium');
                 coffee.append(resultBody);
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
@@ -95,6 +96,7 @@ function printRes(businesses, resultBody) {
   link.setAttribute("href", businesses.url);
   link.setAttribute("target", "_blank");
   var titleEl = document.createElement('h5');
+  titleEl.classList.add('mobileee');
   titleEl.textContent = businesses.name;
   link.append(titleEl);
   resultBody.appendChild(link);
@@ -125,6 +127,7 @@ function displayYelpFoodResults(citySelector){
                 resultBodyFood.classList.add('card2');
                 resultBodyFood.classList.add('seaSalt');
                 resultBodyFood.classList.add('borderRadius');
+                resultBodyFood.classList.add('cardMedium');
                 food.append(resultBodyFood);
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
@@ -162,6 +165,7 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
         resultBodyHotels.classList.add('card3');
         resultBodyHotels.classList.add('seaSalt');
         resultBodyHotels.classList.add('borderRadius');
+        resultBodyHotels.classList.add('cardMedium');
         hotels.append(resultBodyHotels);
       for (var i = 0; i < 10; i++) {
         // console.log(businesses[i].name);
@@ -200,6 +204,7 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
                 resultBodyGas.classList.add('card4');
                 resultBodyGas.classList.add('seaSalt');
                 resultBodyGas.classList.add('borderRadius');
+                resultBodyGas.classList.add('cardMedium');
                 gas.append(resultBodyGas);
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);

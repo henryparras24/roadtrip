@@ -5,7 +5,7 @@ body {background: rgb(24, 23, 23);}
 .darkGrey {background: rgb(24, 23, 23);}
 
 .hero {
-    margin-left: 150px;
+    /* margin-left: 150px; */
     margin-top: 15px;
     margin-bottom: 25px;
     background-repeat: no-repeat;
@@ -20,10 +20,7 @@ body {background: rgb(24, 23, 23);}
     color: rgb(22, 112, 42);
     text-align: center;
 }
-/* .card2 {
-    float: right;
 
-} */
 .columns{
     margin: 5rem auto;
     width: min(90%, 75rem);
@@ -33,32 +30,18 @@ body {background: rgb(24, 23, 23);}
     grid-template-columns: repeat(2, 1fr);
 }
 
-/* .card1 {
-    border:  #343a40 1px;
-}
-
-.card2 {
-    border: green solid 1px;
-}
-
-.card3 {
-    border: green solid 1px;
-}
-
-.card4 {
-
-    border: green solid 1px;
-} */
-
 .seaSalt {background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);}
 
 .borderRadius {border-radius: 20px;}
 
-h3 {color: #adb5bd}
+h3 {
+    color: #adb5bd;
+    text-align: center;
+    }
 
 .lightGrey {color: #adb5bd}
 
-.pill {border-radius: 30px; padding: 10px;}
+.pill {border-radius: 25px;}
 
 .pill:hover {
     cursor: pointer;
@@ -70,3 +53,7 @@ h3 {color: #adb5bd}
 .bottom {margin-bottom: 50px;
          margin-top: 50px;
 }
+
+.mobileee{display: flex; justify-content: center;}
+
+.cardMedium{width: 75%;}

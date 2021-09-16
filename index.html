@@ -15,51 +15,53 @@
     <title>Roadtrip!</title>
 </head>
 <body>
-  <header class="hero">
-    <img src="bannerImg.png" alt="greyscale" width="90%" height="350px" class="city">
+  <header class="hero mobileee">
+    <img src="bannerImg.png" alt="greyscale" width="75%" height="350px" class="city">
   </header>
   
-    <main>   
-        <div class="contain-fluid d-flex" style="color: rgb(22, 112, 42);">
-          <div class="card col-md-4 col-12 darkGrey">
-            <div class="spotify bottom">
-              <h5 class="lightGrey">Play some music:</h5>
+      
+  <h3 class="lightGrey">Music:</h3>
+
+            <div class="spotify bottom mobileee">
               <div id="music-buttons">
+                <button class="pill" data-id="37i9dQZF1DXd5zUwdn6lPb">Classical</button>
+                <button class="pill" data-id="37i9dQZF1DX0wMD4IoQ5aJ">Electronic</button>
                 <button class="pill" data-id="37i9dQZF1DWXRqgorJj26U">Rock</button>
                 <button class="pill" data-id="37i9dQZF1DX92MLsP3K1fI">Pop</button>
                 <button class="pill" data-id="37i9dQZF1DWV7EzJMK2FUI">Jazz</button>
-                <button class="pill" data-id="37i9dQZF1DXd5zUwdn6lPb">Classical</button>
                 <button class="pill" data-id="37i9dQZF1DWSfMe9z89s9B">RnB</button>
-                <button class="pill" data-id="37i9dQZF1DX35DWKgAk2B5">Indie</button>
-                <button class="pill" data-id="37i9dQZF1DX0wMD4IoQ5aJ">Electronic</button>
+                <!-- <button class="pill" data-id="37i9dQZF1DX35DWKgAk2B5">Indie</button> -->
               </div>
-              <iframe class="1"  id="playlist" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+              
             </div>
-            <h3 class="card-header text-uppercase lightGrey">Search By City</h3>
-            <form id="user-form" class="card-body darkGrey">
+            <div class="mobileee">
+            <iframe class="1"  id="playlist" src="https://open.spotify.com/embed/playlist/37i9dQZF1DWXRqgorJj26U" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+            </div>   
+            
+            <h3 class="card-header text-uppercase lightGrey">Search Yelp</h3>
+            <form class="mobileee">
                 <label class="form-label lightGrey" for="username"></label>
                 <input placeholder="Type City Here" name="username" id="cityName" type="text" autofocus="true" class="form-input" />
-                <button type="submit" id="submitButton" class="btn" style="color:#adb5bd">Go!</button> 
-
+                <button type="submit" id="submitButton" class="pill">Go!</button> 
             </form>
             
-        </div>
-        <div class ="columns flex-row align-start align-stretch-md align-content-start align-content-stretch-md min-100-vh ">
+        
+        <div>
           <h3>Coffee:</h3>
-          <div class="card1" id="coffee">
+          <div class="card1 mobileee" id="coffee">
           </div>
           <h3>Food:</h3>
-          <div class="card2" id="food">
+          <div class="card2 mobileee" id="food">
           </div>
           <h3>Hotels:</h3>
-          <div class="card3" id="hotels">
+          <div class="card3 mobileee" id="hotels">
           </div>
           <h3>Gas:</h3>
-          <div class="card4" id="gas">
+          <div class="card4 mobileee" id="gas">
           </div>
         </div>
         
-    </main>
+    
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
     <script src="spotify.js"></script>
