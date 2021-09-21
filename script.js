@@ -74,6 +74,12 @@ let queryYelp = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/v3/bus
                 resultBody.classList.add('borderRadius');
                 resultBody.classList.add('cardMedium');
                 coffee.append(resultBody);
+
+                var coffeeWord = document.createElement('h3');
+                coffeeWord.innerHTML = `Coffee`;
+                coffeeWord.classList.add('mobileee');
+                resultBody.appendChild(coffeeWord);
+
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
                 // console.log(businesses[i].url);
@@ -129,6 +135,12 @@ function displayYelpFoodResults(citySelector){
                 resultBodyFood.classList.add('borderRadius');
                 resultBodyFood.classList.add('cardMedium');
                 food.append(resultBodyFood);
+
+                var foodWord = document.createElement('h3');
+                foodWord.innerHTML = `Food`;
+                foodWord.classList.add('mobileee');
+                resultBodyFood.appendChild(foodWord);
+
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
                 // console.log(businesses[i].url);
@@ -167,6 +179,12 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
         resultBodyHotels.classList.add('borderRadius');
         resultBodyHotels.classList.add('cardMedium');
         hotels.append(resultBodyHotels);
+
+        var hotelWord = document.createElement('h3');
+        hotelWord.innerHTML = `Hotels`;
+        hotelWord.classList.add('mobileee');
+        resultBodyHotels.appendChild(hotelWord);
+
       for (var i = 0; i < 10; i++) {
         // console.log(businesses[i].name);
         // console.log(businesses[i].url);
@@ -206,6 +224,12 @@ let queryYelpHotels = 'https://cors-anywhere.herokuapp.com/https://api.yelp.com/
                 resultBodyGas.classList.add('borderRadius');
                 resultBodyGas.classList.add('cardMedium');
                 gas.append(resultBodyGas);
+
+                var gasWord = document.createElement('h3');
+                gasWord.innerHTML = `Gas`;
+                gasWord.classList.add('mobileee');
+                resultBodyGas.appendChild(gasWord);
+
               for (var i = 0; i < 10; i++) {
                 // console.log(businesses[i].name);
                 // console.log(businesses[i].url);

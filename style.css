@@ -1,13 +1,13 @@
 * {font-family: 'Kaisei Tokumin', serif;}
 
-body {background: rgb(24, 23, 23);}
+body {background: rgb(20, 20, 20)}
 
 .darkGrey {background: rgb(24, 23, 23);}
 
 .hero {
     /* margin-left: 150px; */
-    margin-top: 15px;
-    margin-bottom: 25px;
+    /* margin-top: 15px;
+    margin-bottom: 25px; */
     background-repeat: no-repeat;
 }
 
@@ -34,14 +34,9 @@ body {background: rgb(24, 23, 23);}
 
 .borderRadius {border-radius: 20px;}
 
-h3 {
-    color: #adb5bd;
-    text-align: center;
-    }
+.lightGrey {color: #adb5bd; text-align: center;}
 
-.lightGrey {color: #adb5bd}
-
-.pill {border-radius: 25px;}
+.pill {border-radius: 25px; background-color: #adb5bd }
 
 .pill:hover {
     cursor: pointer;
@@ -56,4 +51,21 @@ h3 {
 
 .mobileee{display: flex; justify-content: center;}
 
-.cardMedium{width: 75%;}
+.cardMedium{width: 25%; float: left;}
+
+
+
+
+/* Cards are split into two columns at 992px or smaller */
+@media screen and (max-width: 992px) {
+    .cardMedium {
+      width: 50%;
+    }
+  }
+  
+/* Cards are stacked on top of each other at 768px or smaller */
+  @media screen and (max-width: 768px) {
+    .cardMedium {
+      width: 100%;
+    }
+  }

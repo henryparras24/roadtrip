@@ -21,6 +21,6 @@ And music is played.
 ## Mockup
 This is what our webpage looks like
 
-<img width="1440" alt="newroadtrip" src="https://user-images.githubusercontent.com/82185621/133369464-c38485e8-4b1a-4488-a58e-8139fcb61f0b.png">
+
 
 https://henryparras24.github.io/roadtrip/
